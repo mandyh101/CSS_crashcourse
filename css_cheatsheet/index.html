@@ -5,7 +5,108 @@
     <link rel="stylesheet" type="text/css" href="style/main.css">
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="container">
+      <div class="box-1">
+        <h1>Hello World</h1>
+        <p>
+          It's time for CSS crashcourse. I'm on  mission to master the CSS! Okay not master...but I really want to get the basics down packed. Let's do this!
+        </p>
+        <p>
+          Questions explained agreeable preferred strangers too him her son. Set put shyness offices his females him distant. Improve has message besides shy himself cheered however how son. Quick judge other leave ask first chief her. Indeed or remark always silent seemed narrow be. Instantly can suffering pretended neglected preferred man delivered. Perhaps fertile brandon do imagine to cordial cottage.   
+        </p>
+      </div>
+      <div class="box-2">
+        <h1>Goodbye World</h1>
+        <p>
+          It's time for CSS crashcourse. I'm on  mission to master the CSS! Okay not master...but I really want to get the basics down packed. Let's do this!
+        </p>
+        <p>
+          Questions explained agreeable preferred strangers too him her son. Set put shyness offices his females him distant. Improve has message besides shy himself cheered however how son. Quick judge other leave ask first chief her. Indeed or remark always silent seemed narrow be. Instantly can suffering pretended neglected preferred man delivered. Perhaps fertile brandon do imagine to cordial cottage.   
+        </p>
+        <a class="button" href="">Read more</a>
+      </div>
+      <div class="categories">
+        <h2>Categories</h2>
+        <ul>
+          <li><img class="checkbox" src="./images/checkicon.png" alt="checkbox"><a href ="#"">Category 1</a></li>
+          <li><a href ="#"">Category 2</a></li>
+          <li><a href ="#"">Category 3</a></li>
+          <li><a href ="#"">Category 4</a></li>
+        </ul>
+      </div>
+      <form class="my-form">
+        <div class="form-group">
+          <label>Name:</label>
+          <input type="text" name="name">
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="text" name="email">
+        </div>
+        <div class="form-group">
+          <label>Message:</label>
+          <textarea name="message"></textarea>
+        </div>
+        <input class="button" type="submit" value="Submit" name="">
+      </form>
+      <div class="block">
+        <h3>Float & box-sizing:border-box</h3>
+        <p>
+          One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+        </p>
+      </div>
+      <div class="block"><!--this section tests float-->
+        <h3>Float & box-sizing:border-box</h3>
+        <p>
+          One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+        </p>
+      </div>
+        <div class="block">
+          <h3>Float & box-sizing:border-box</h3>
+          <p>
+            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+          </p>
+      </div> 
+      <!--Remember if you have used float you need to use clearfix/clr as a global class to clear the float formatting above any other elements.
+        -->
+      <div class="clr"></div>
+
+      <div id="main-block">
+        <h3>Main block</h3>
+          <p>
+            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+          </p>
+      </div>
+      <div id="side-bar">
+          <p>
+            SIDE BAR: One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+          </p>
+      </div>
+      <div class="clr"></div>
+      <div class="position-box">
+        <h1>Position box 1</h1>
+        <h2>Position box 2</h2>
+      </div>
+
+      <div>
+        <h2>The parent tag of this list 'ul' has class = pseudoclass</ul></h2>
+        <ul class="pseudoclass"><!--This example shows how you can target an element for style by selecting the class or id of the parent element and then the element:the order that the child appears in the parent element. See main.css for more!-->
+          <li>In CSS this would be = .Pseudoclass li:first-child{}</li><!--In CSS this would be = .Pseudoclass li:first-child{}-->
+          <li>In CSS this would be = .Pseudoclass li:nth-child(2){}</li>
+          <li>In CSS this would be = .Pseudoclass li:nth-child(3){}</li>
+          <li>In CSS this would be = .Pseudoclass li:nth-child(4){}</li>
+          <li>In CSS this would be = .Pseudoclass li:nth-child(5){}</li> <!--In CSS this would be = .Pseudoclass li:nth-child(5){}-->
+          <li>In CSS this would be = .Pseudoclass li:nth-child(6){}</li>
+          <li>In CSS this would be = .Pseudoclass li:nth-child(7){}</li>
+          <li>In CSS this would be = .Pseudoclass li:nth-child(8){}</li>
+          <li>In CSS this would be = .Pseudoclass li:last-child{}</li> <!--In CSS this would be = .Pseudoclass li:last-child{}-->
+        </ul>
+      </div>
+
+    </div><!--This is where the conaatiner ends that we waant to wrap all the content in!-->
+  
+    <a class="button fix-me" ref="">This is a fixed element</a>
+    <div style="margin-top: 500px;"></div>
 
   </body>
 </html>

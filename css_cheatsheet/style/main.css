@@ -1,4 +1,212 @@
+*{ /* this asterisk allows you to reset the default style of a page and set your own defaults*/
+  /* margin:0;
+  padding:0; */
+  /* border: 1px red solid; */
+}
 body{
   background-color: palegoldenrod;
-  color:cornflowerblue
+  color:cornflowerblue;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  /*a short way to call the font style - same a sthe three lines above */
+  font: normal 16px Segoe UI Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6em;
 }
+
+a{
+  text-decoration: none;
+  color: pink;
+}
+
+a:hover{
+  color: aqua;
+}
+
+a:active{
+  color:greenyellow;
+}
+
+/* a:visited{
+  color: palegreen;
+} */
+
+.button{
+  display: inline-block;
+  background-color:pink ;
+  color: cornflowerblue;
+  padding: 10px 15px ;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.button:hover{
+  background-color: aqua;
+  color: palegoldenrod;
+}
+
+.clr{
+  clear:both;
+}
+
+.container{
+  width: 80%; /*960px is popular for webistes. However px is not responsive, while % is*/
+  margin:auto;
+}
+
+.box-1{
+  background-color: pink;
+  border: 5px cornflowerblue solid;/* you can do each border side individually by using border-left, border-right, border-top etc*/
+  border-width: 3px;
+  border-bottom-width:10px ;
+  border-top-style:dotted;
+  /*the below basic border style will cancel out the above styling*/
+  border: 5px whitesmoke solid; /*note that this style will cancel out the above  in the doc*/
+
+  /* padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px; */
+  padding: 20px; /*same as above*/
+
+  margin-top: 20px 0px;
+}
+
+.box-1 h1{ /*This is goiong to style only h1 taags within this class*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
+
+.box-2{
+  border: 3px dotted thistle;
+  padding: 20px;
+  margin: 20px;
+}
+.categories{
+  border:1px lightslategray solid;
+  padding:20px;
+  border-radius: 15px;
+}
+
+.categories h2{
+  text-align: center;
+}
+
+.categories ul{
+  padding: 0;
+  list-style: none; /*change the type of bullet*/
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  /* padding: 10px;
+  margin: 10px; */
+  /* border: 1px red solid; */
+}
+
+.categories li{
+  padding-bottom: 8px;
+  border-bottom: dotted 1px thistle;
+  /* list-style-image:url('../images/checkicon.png'); */
+}
+
+.my-form{
+  padding:20px;
+  }
+
+.form-group{
+    padding-bottom:15px;
+  }
+
+.my-form label{
+  display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{ /*adding type of text means only the input elements that also have the type attribute text will have this style applied. Take the type away and the button on your form will also take the style below.
+  Note that we also add my.form textarea to this style selector so that both the fprm inputs and the form textaarea elements take the same styling*/
+  padding:8px;
+  width:100%;
+}
+
+/* .my-form input[type="submit"]{
+  background-color:pink ;
+  color: cornflowerblue;
+  padding: 10px 15px ;
+  border: none;
+  border-radius: 10px;
+} */
+/* Replaced above style with a button selector nd moved to the top of page as it's a global selector now*/
+
+.block{
+  float: left;
+  width: 33.3%;
+  border: 3px thistle dotted;
+  padding: 15px;
+  box-sizing: border-box; /*This means if you apply style to padding etc, it's applied within the border of the box which means it won't stretch out of the width. To see what I mean, comment out the box-sizing and see what happens to the boxes!*/
+}
+
+#main-block{
+  float: left;
+  width: 67%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#side-bar{
+  float: right;
+  width: 33%;
+  background-color: pink;
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.position-box{ /*parent element*/
+  width:800px;
+  height: 500px;
+  border: 1px whitesmoke solid;
+  margin-top: 10px;
+  position:relative; /*parent element has the relative position*/
+  background-image: url('../images/mandysurfs.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* object-fit: cover; */
+}
+
+.position-box h1{ /*child element*/
+  position: absolute; /*child element has the absolue position which will be RELATIVE to the parent element. If there was no parent element this element would position itself relative to the web-page document*/
+  top: 100px;
+  left: 200px;
+}
+
+.position-box h2{ /*child element*/
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+}
+
+.fix-me{
+  position: fixed;
+  top: 400px;
+}
+
+.pseudoclass li:first-child{
+  background-color: aliceblue;
+}
+
+.pseudoclass li:nth-child(5){
+  background-color: paleturquoise;
+}
+
+.pseudoclass li:last-child{
+  background-color: peachpuff;
+}
+/* Other things you can do is call even/odd for the nth child in the parenthesis! */

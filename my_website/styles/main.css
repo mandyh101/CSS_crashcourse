@@ -1,0 +1,101 @@
+body{
+  background-color: whitesmoke;
+  color:cornflowerblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+#main-header{
+  background-color: pink;
+  color: whitesmoke;
+}
+
+#nav-bar{
+  background-color: thistle;
+  color: cornflowerblue;
+}
+
+#nav-bar ul{
+  padding:0; /*removes the indent from the bullet list*/
+  list-style: none;
+}
+
+#nav-bar li{
+  display: inline;
+}
+
+#nav-bar a{
+  color: cornflowerblue;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+#showcase{
+  background-image: url('../images/mandysurfs.jpg');
+  background-position: center right;
+  min-height: 300px;/*this makes the height more responsive and avoids child elements overflowing out of here if the height increases above 300px */
+  margin-bottom: 30px;
+  text-align: center;
+  background-repeat: no-repeat;
+  border-image-width: 100%;
+}
+
+/* #showcase img{
+  width:100%;
+  min-height: 300px;
+  object-fit: fill;
+} */
+
+#showcase h1{
+  color: cornflowerblue;
+  font-size: 50px;
+  line-height: 1.6em;
+  padding-top: 30px;
+
+}
+
+#main{
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#sidebar{
+  float: right;
+  width: 30%;
+  background-color: pink;
+  color: whitesmoke;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#main-footer{
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media(max-width:600px){
+  #main{
+    width:100%;
+    float:none;
+  }
+
+  #sidebar{
+    width:100%;
+    float:none;
+  }
+}

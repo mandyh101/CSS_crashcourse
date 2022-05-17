@@ -46,6 +46,7 @@ a:active{
   color: palegoldenrod;
 }
 
+/* clear the float styling for the next elements */
 .clr{
   clear:both;
 }

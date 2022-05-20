@@ -8,18 +8,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .flex-container{
-height: 400px; /*without a height you won't be able to move items on a vertical axis with align-items*/
+/* height: 400px; (without a height you won't be able to move items on a vertical axis with align-items) */
 display: flex;
 background-color: aliceblue;
-/* justify-content: start (right of page), center(mid of page), end (left of page); space-around (even space all around), space-between(even space between all items) 
+/* justify-content (on default/row setting): start (lefy of page), center(mid of page), end (right of page); space-around (even space all around), space-between(even space between all items) 
 Justify content is always on the main axis*/
-justify-content: space-between;
-/* align items: start = top of page, end = bottom of page, center = mid of page
+/* justify-content: end; */
+/* align items(on default/row setting): start = top of page, end = bottom of page, center = mid of page
 Align-items is always on the cross aaxis */
-align-items: center;
+/* align-items: center; */
 /*  flex-direction can be column, reverse column, row, reverse row
 when flex-direction is set to column or column reverse note that main/cross axis will change and so flex-direction and justify-content wwill change*/
-flex-direction: column;
+/* flex-direction: column; */
+
+/* flex-wrap: wrap; */
 }
 
 .item {
@@ -28,17 +30,23 @@ flex-direction: column;
   background-color: #254DE4;
   margin: 10px;
   color:white;
-  float: left;
+  /* display: flex; - the three lines starting from here are a classic way to center a div.
+  justify-content: center;
+  align-items: center; */
+  
 }
 
-/* .item:nth-of-type(1){
-  align-self: flex-start;
+.item:nth-of-type(1){
+  /* align-self: flex-start; */
+  order:2; /*use order to move the individual elements*/
 }
 
 .item:nth-of-type(2){
-  align-self: center;
+  /* align-self: center; */
+  order:1;
 }
 
 .item:nth-of-type(3){
-  align-self: flex-end;
-} */
+  /* align-self: flex-end; */
+  order:3;
+}

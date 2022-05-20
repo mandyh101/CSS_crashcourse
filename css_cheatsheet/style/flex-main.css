@@ -12,10 +12,17 @@ body {
 background-color: aliceblue;
 }
 
+.flex-container::after{
+content: '';
+clear: both;
+display: block;
+}
+
 .item {
   width:100px;
   height: 100px;
   background-color: #254DE4;
   margin: 10px;
-  color:white
+  color:white;
+  float: left;
 }

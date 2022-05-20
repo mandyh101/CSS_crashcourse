@@ -8,11 +8,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .flex-container{
-height: 400px; /*without a height you won't be able to have multiple lines of your items*/
+height: 400px; /*without a height you won't be able to move items on a vertical axis with align-items*/
 display: flex;
 background-color: aliceblue;
 /* justify-content: start (right of page), center(mid of page), end (left of page); space-around (even space all around), space-between(even space between all items) */
 justify-content:start ;
+/* align items: start = top of page, end = bottom of page, center = mid of page */
+align-items: center;
 }
 
 .item {
